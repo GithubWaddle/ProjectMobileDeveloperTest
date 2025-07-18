@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/first_screen_background"
+    android:padding="24dp"
+    android:gravity="center"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/circularImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_photo"
+        android:layout_marginBottom="48dp"
+        app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+    <EditText android:id="@+id/etName"
+        android:hint="Name"
+        android:paddingStart="24dp"
+        android:textColorHint="#BBB"
+        android:textColor="#000"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/pill_background"
+        />
+
+    <EditText android:id="@+id/etSentence"
+        android:hint="Sentence"
+        android:paddingStart="24dp"
+        android:textColorHint="#BBB"
+        android:textColor="#000"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/pill_background"
+        />
+
+    <Button android:id="@+id/btnCheck"
+        android:text="Check"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/pill_background"
+        android:backgroundTint="#2b637b"
+        />
+
+    <Button android:id="@+id/btnNext"
+        android:text="Next"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/pill_background"
+        android:backgroundTint="@null"
+        />
+</LinearLayout>
